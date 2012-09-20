@@ -1,0 +1,38 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <title>Noticon</title>
+    <link rel="stylesheet" href="../build/build.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      body {
+        background: #EBEBEB;
+        padding: 150px;
+      }
+      canvas {
+        margin: 10px;
+      }
+      .big-pie {
+        color: #5d8dc7;
+        background: #78b5ff;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../build/build.js"></script>
+    <script>
+      var Noticon = require('noticon');
+      var icon = new Noticon;
+
+      var n = 0;
+      function next() {
+        icon.update(n++);
+        setTimeout(next, Math.random() * 500);
+      }
+      
+      setTimeout(next, 200);
+
+    </script>
+  </body>
+</html>
