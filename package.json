@@ -2,7 +2,12 @@
   "name": "noticon-component",
   "description": "Numeric favicon notification bubbles",
   "version": "0.0.1",
-  "keywords": ["notify", "notification", "favicon", "bubble"],
+  "keywords": [
+    "notify",
+    "notification",
+    "favicon",
+    "bubble"
+  ],
   "dependencies": {
     "style-component": "*",
     "favicon-component": "*"
@@ -11,6 +16,12 @@
     "scripts": {
       "noticon/index.js": "index.js"
     },
-    "styles": ["noticon.css"]
+    "styles": [
+      "noticon.css"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/noticon.git"
   }
 }
